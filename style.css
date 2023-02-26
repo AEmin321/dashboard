@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 0.5fr;
+}
+
+/* main grid children*/
+.header {
+    background-color: blue;
+    grid-column: 2/4;    
+}
+
+.sidebar {
+    background-color: #4ECCA3;
+    padding: 7px;
+    grid-row: 1/5;
+    display: grid;
+    grid-template-rows: 100px 200px 150px 1fr;
+    gap: 11px;
+    align-items: center;
+}
+
+.projects {
+    background-color: pink;
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.announcements {
+    background-color: springgreen;
+}
+
+.trending {
+    background-color: brown;
+}
+
+.footer {
+    background-color: #232931;
+    grid-column: 2/4;
+}
+
+/* sidebar logo */
+.logo-svg {
+    margin-right: 7px;
+    width: 42px;
+}
+
+.logo {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* sidebar main links and seconadary links*/
+.main-links div,.secondary-links div {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    gap: 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    font-family: 'Roboto',sans-serif;
+}
+
+/* sidebar links svg */
+svg {
+    color: #EEEEEE;
+    width: 20px;
+}
+
+/* Sidebar grid */
