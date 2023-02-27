@@ -38,7 +38,10 @@ body {
 }
 
 .announcements {
-    background-color: springgreen;
+    background-color: white;
+    color: #232931;
+    font-family: "Roboto",sans-serif;
+    margin: 0 12px 12px 12px;
 }
 
 .trending {
@@ -183,4 +186,30 @@ input:focus {
     flex-direction: column;
     justify-content: space-evenly;
     margin-left: 16px;
+}
+
+/* Announcement section */
+.announcement-content {
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    margin: 17px 0;
+}
+
+.card h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.card p {
+    padding: 0;
+    margin: 5px 0;
+    font-weight: 100;
+    font-size: 0.8rem;
 }
